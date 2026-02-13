@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Erro 404 - Floricultura</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+
+      /* Fundo degradê animado suave */
+      background: linear-gradient(135deg, #2e8b57, #007acc, #add8e6, #ffb6c1);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 100px;
+      margin: 0;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+      animation: pulse 2.5s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {transform: scale(0.95); opacity: 0.85;}
+      to {transform: scale(1.05); opacity: 1;}
+    }
+
+    p {
+      font-size: 22px;
+      margin: 10px 0 30px;
+      color: #f0f0f0;
+    }
+
+    .imagem {
+      margin: 20px auto;
+      width: 320px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .imagem img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, #007acc, #005f99);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Ops... Página não encontrada</p>
+  <a href="index.html">Voltar para Home</a>
+</body>
+</html>
